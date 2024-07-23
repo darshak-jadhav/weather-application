@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app </title>
+    <!-- css file -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- font- awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+
+    <div class="main">
+        <div class="themebtn">
+            <h1 id="themebtn" class="fa-solid fa-moon"></h1>
+        </div>
+        <div class="main_heading">
+            <h1>WEATHER APP</h1>
+            <p>by <a href="https://darshak-jadhav.github.io/Portfolio/">Darshak jadhav</a></p>
+        </div>
+        <div class="header">
+            <div class="search_box">
+                <input type="text" placeholder="Enter location" class="input_box">
+                <button id="search_btn" class="fa-solid fa-search"></button> 
+            </div>
+        </div>
+
+        <div class="error_location">
+            <h1>Location <br>not found!!</h1>
+            <img src="404.png" alt="" id="error_img">
+        </div>
+
+        <div class="weatherbox">
+            <div class="main_weather">
+            <img src="cloud.png" alt="" class="weather_img">
+            <div class="weather_details">
+                <h1 class="temp">0</h1>
+                <p class="desc">description</p>
+            </div>
+      </div>
+
+        <div class="weather_other_details">
+            <div class="humidity">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="text">
+                    <h2 id="humidity_data">0%</h2>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <h2 id="wind_data">0Km/H</h2>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
